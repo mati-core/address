@@ -8,8 +8,6 @@ parameters:
 		- src/Presenters/*
 		- install/*
 		- update/*
-	ignoreErrors:
-		- '#Call to an undefined method [a-zA-Z0-9\\_]+Presenter::checkAccess\(\)#'
 
 	checkGenericClassInNonGenericObjectType: false
 	checkMissingIterableValueType: false
