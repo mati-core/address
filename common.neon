@@ -1,0 +1,16 @@
+services:
+	- MatiCore\Address\CountryManager
+
+parameters:
+	menu:
+		cmsMainDefault:
+			items:
+				settings:
+					children:
+						countries:
+							title: Země
+							icon: fas fa-globe-europe
+							route: :Admin:Country:default
+							position: 500
+							rights:
+								- cms__countries
