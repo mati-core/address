@@ -3,14 +3,16 @@ services:
 
 parameters:
 	menu:
-		cmsMainDefault:
+		cmsMainSetting:
 			items:
-				settings:
-					children:
-						countries:
-							title: Země
-							icon: fas fa-globe-europe
-							route: :Admin:Country:default
-							position: 500
-							rights:
-								- cms__countries
+				countries:
+					title: address.menu.country.title
+					route: :Admin:Country:default
+					icon: fas fa-globe-europe
+					position: 85
+					rights:
+						- cms__settings__countries
+
+orm.annotations:
+	paths:
+		MatiCore\Address: %appDir%/../vendor/mati-core/address/src/Entity

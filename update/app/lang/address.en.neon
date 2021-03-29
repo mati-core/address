@@ -1,0 +1,9 @@
+menu:
+	country:
+		title: Countries
+
+page:
+	country:
+		title: Countries
+		list: Country list
+		no_items: No countries in the list

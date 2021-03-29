@@ -1,0 +1,9 @@
+menu:
+	country:
+		title: Země
+
+page:
+	country:
+		title: Země
+		list: Seznam zemí
+		no_items: Žádné země v seznamu
