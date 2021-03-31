@@ -52,7 +52,7 @@ class Address
 	 * @var string|null
 	 * @ORM\Column(type="string", nullable=true)
 	 */
-	private string|null $in;
+	private string|null $cin;
 
 	/**
 	 * @var string|null
@@ -239,18 +239,18 @@ class Address
 	/**
 	 * @return string|null
 	 */
-	public function getIn(): ?string
+	public function getCin(): ?string
 	{
-		return $this->in;
+		return $this->cin;
 	}
 
 	/**
-	 * @param string|null $in
+	 * @param string|null $cin
 	 * @return $this
 	 */
-	public function setIn(?string $in): self
+	public function setCin(?string $cin): self
 	{
-		$this->in = $in;
+		$this->cin = $cin;
 
 		return $this;
 	}
@@ -261,7 +261,7 @@ class Address
 	 */
 	public function getIc(): ?string
 	{
-		return $this->getIn();
+		return $this->getCin();
 	}
 
 	/**
@@ -271,7 +271,7 @@ class Address
 	 */
 	public function setIc(?string $ic): self
 	{
-		return $this->setIn($ic);
+		return $this->setCin($ic);
 	}
 
 	/**
