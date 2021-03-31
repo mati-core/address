@@ -1,5 +1,6 @@
 services:
 	- MatiCore\Address\CountryManager
+	- MatiCore\Address\CountryManagerAccessor
 
 parameters:
 	menu:
