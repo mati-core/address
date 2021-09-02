@@ -55,7 +55,7 @@ class CountryInnerPackagePresenter extends BaseAdminPresenter
 			$country = $this->countryManager->getCountryById($id);
 			$country->setActive(!$country->isActive());
 
-			$this->entityManager->flush($country);
+			$this->entityManager->getUnitOfWork()->commit($country);
 			$this->flashMessage('Změny byly úspěšně uloženy.', 'success');
 		} catch (NoResultException|NonUniqueResultException $e) {
 			$this->flashMessage('Požadovaná země nenalezena.', 'danger');
